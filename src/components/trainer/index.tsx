@@ -1,5 +1,5 @@
 import { useCallback, useState } from "react"
-import { CFOPCase, CFOPStep } from "../../model/CFOP"
+import { CFOPCase } from "../../model/CFOP"
 import { TrainerNotStarted } from "./trainerNotStarted"
 import { TrainerShowingQuestion } from "./trainerShowingQuestion"
 import { TrainerQuestion } from './trainer.types'
