@@ -1,5 +1,13 @@
 import { CFOPCase } from "../model/CFOP";
 
+import oll21img from '../assets/oll/oll21.svg'
+import oll22img from '../assets/oll/oll22.svg'
+import oll23img from '../assets/oll/oll23.svg'
+import oll24img from '../assets/oll/oll24.svg'
+import oll25img from '../assets/oll/oll25.svg'
+import oll26img from '../assets/oll/oll26.svg'
+import oll27img from '../assets/oll/oll27.svg'
+
 const olls: CFOPCase[] = [
   {
     step: 'oll',
@@ -22,7 +30,7 @@ const olls: CFOPCase[] = [
       "R' U' F2 R F2 R2 U R F2 L2 U' B2 D R2 F2 D' R2 B2",
     ],
     solution: "y F (R U R' U')3x F'",
-    image: "/oll/oll21.svg",
+    image: oll21img,
   },
   {
     step: 'oll',
@@ -40,7 +48,7 @@ const olls: CFOPCase[] = [
       "R' U2 R U' B2 L U L' U B2 D2 F2 L2 U' L2 D F2 D",
     ],
     solution: "R U2 R2' U' R2 U' R2' U2 R",
-    image: "/oll/oll22.svg",
+    image: oll22img,
   },
   {
     step: 'oll',
@@ -66,7 +74,7 @@ const olls: CFOPCase[] = [
       "U2 R F' L B2 L' F R' B2 U F2 U R2 D' R2 U' F2 B2",
     ],
     solution: "R2 D R' U2 R D' R' U2 R'",
-    image: '/oll/oll23.svg', 
+    image: oll23img, 
   },
   {
     step: 'oll',
@@ -85,7 +93,7 @@ const olls: CFOPCase[] = [
       "R' D' L2 D R' D' L2 D R2",
     ],
     solution: "r U R' U' r' F R F'",
-    image: '/oll/oll24.svg', 
+    image: oll24img, 
   },
   {
     step: 'oll',
@@ -107,7 +115,7 @@ const olls: CFOPCase[] = [
       "R2 U' L' U R2 U' L F2 L2 U R2 D' B2 L2 D R2 U",
     ],
     solution: "y F' r U R' U' r' F R",
-    image: '/oll/oll25.svg', 
+    image: oll25img,
   },
   {
     step: 'oll',
@@ -127,7 +135,7 @@ const olls: CFOPCase[] = [
       "R' U2 R U R' U R",
     ],
     solution: "y R U2 R' U' R U' R'",
-    image: '/oll/oll26.svg', 
+    image: oll26img, 
   },
   {
     step: 'oll',
@@ -146,7 +154,7 @@ const olls: CFOPCase[] = [
       "R' U' R U' R' U2 R U'",
     ],
     solution: "R U R' U R U2 R'",
-    image: "/oll/oll27.svg",
+    image: oll27img,
   },
 ]
 

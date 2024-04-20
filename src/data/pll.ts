@@ -1,11 +1,33 @@
 import { CFOPCase } from "../model/CFOP";
 
+import pllAaImg from '../assets/pll/aa.svg'
+import pllAbImg from '../assets/pll/ab.svg'
+import pllEImg from '../assets/pll/e.svg'
+import pllFImg from '../assets/pll/f.svg'
+import pllGaImg from '../assets/pll/ga.svg'
+import pllGbImg from '../assets/pll/gb.svg'
+import pllGcImg from '../assets/pll/gc.svg'
+import pllGdImg from '../assets/pll/gd.svg'
+import pllHImg from '../assets/pll/h.svg'
+import pllJaImg from '../assets/pll/ja.svg'
+import pllJbImg from '../assets/pll/jb.svg'
+import pllNaImg from '../assets/pll/na.svg'
+import pllNbImg from '../assets/pll/nb.svg'
+import pllRaImg from '../assets/pll/ra.svg'
+import pllRbImg from '../assets/pll/rb.svg'
+import pllTImg from '../assets/pll/t.svg'
+import pllUaImg from '../assets/pll/ua.svg'
+import pllUbImg from '../assets/pll/ub.svg'
+import pllVImg from '../assets/pll/v.svg'
+import pllYImg from '../assets/pll/y.svg'
+import pllZImg from '../assets/pll/z.svg'
+
 const plls: CFOPCase[] = [
   {
     step: 'pll',
     id: 'PLL 1',
     name: 'Aa',
-    image: '/pll/aa.svg',
+    image: pllAaImg,
     setups: [
       "R2 D' F2 D B2 D' F2 D B2 R2",
       "R2 F2 U B2 U' F2 U B2 U' R2",
@@ -21,7 +43,7 @@ const plls: CFOPCase[] = [
     step: 'pll',
     id: 'PLL 2',
     name: 'Ab',
-    image: '/pll/ab.svg',
+    image: pllAbImg,
     setups: [
       "R2 B2 D' F2 D B2 D' F2 D R2",
       "R2 B2 U' F2 U B2 U' F2 U R2",
@@ -43,7 +65,7 @@ const plls: CFOPCase[] = [
     step: 'pll',
     id: 'PLL 3',
     name: 'E',
-    image: '/pll/e.svg',
+    image: pllEImg,
     setups: [
       "F U2 F2 D F2 U2 F R2 U F2 U F2 U2 R2 D' F2 U2",
       "R B R' F2 R B' R B2 U' F2 D L2 B2 D' F2 U F2",
@@ -59,7 +81,7 @@ const plls: CFOPCase[] = [
     step: 'pll',
     id: 'PLL 4',
     name: 'F',
-    image: '/pll/f.svg',
+    image: pllFImg,
     setups: [
       "R F' R B2 R' F R U D2 L2 D F2 U' D2 L2 D' B2",
       "R F' R B2 R' F R U' R2 U R2 U B2 D' R2 U D",
@@ -75,7 +97,7 @@ const plls: CFOPCase[] = [
     step: 'pll',
     id: 'PLL 5',
     name: 'Ga',
-    image: '/pll/ga.svg',
+    image: pllGaImg,
     setups: [
       "F2 R L B2 R L' D' B2 R2 U F2 L2 D F2 D' F2",
       "R2 F B U2 F' B' U F2 R2 U B2 U' F2 U B2 R2",
@@ -94,7 +116,7 @@ const plls: CFOPCase[] = [
     step: 'pll',
     id: 'PLL 6',
     name: 'Gb',
-    image: '/pll/gb.svg',
+    image: pllGbImg,
     setups: [
       "R L U2 R' L F2 D' R2 F2 U' R2 U L2 U' B2",
       "R L U2 R' L U' F2 L2 D' B2 U B2 L2 D L2",
@@ -115,7 +137,7 @@ const plls: CFOPCase[] = [
     step: 'pll',
     id: 'PLL 7',
     name: 'Gc',
-    image: '/pll/gc.svg',
+    image: pllGcImg,
     setups: [
       "R2 F B L2 F' B D L2 B2 U' L2 U R2 U' L2 F2",
       "R2 F B U2 F' B' U' F2 R2 U' F2 R2 D' F2 D F2",
@@ -135,7 +157,7 @@ const plls: CFOPCase[] = [
     step: 'pll',
     id: 'PLL 8',
     name: 'Gd',
-    image: '/pll/gd.svg',
+    image: pllGdImg,
     setups: [
       "R L' B2 R' L' D R2 B2 U R2 U' L2 U F2 U",
       "R L' B2 R' L' D R2 B2 U R2 U' L2 U F2",
@@ -150,7 +172,7 @@ const plls: CFOPCase[] = [
     step: 'pll',
     id: 'PLL 9',
     name: 'H',
-    image: '/pll/h.svg',
+    image: pllHImg,
     setups: [
       "U R2 F2 B2 L2 D R2 F2 B2 L2",
       "U R2 F2 B2 L2 D' R2 F2 B2 L2",
@@ -162,7 +184,7 @@ const plls: CFOPCase[] = [
     step: 'pll',
     id: 'PLL 10',
     name: 'Ja',
-    image: '/pll/ja.svg',
+    image: pllJaImg,
     setups: [
       "U B2 R2 U' R2 U R2 D' R2 D B2",
       "U F2 U' F2 D F2 D' L2 U L2 F2",
@@ -179,7 +201,7 @@ const plls: CFOPCase[] = [
     step: 'pll',
     id: 'PLL 11',
     name: 'Jb',
-    image: '/pll/jb.svg',
+    image: pllJbImg,
     setups: [
       "U B2 L2 U L2 U' L2 D L2 D' B2",
       "U B2 U B2 D' B2 D L2 U' L2 B2",
@@ -201,7 +223,7 @@ const plls: CFOPCase[] = [
     step: 'pll',
     id: 'PLL 12',
     name: 'Na',
-    image: '/pll/na.svg',
+    image: pllNaImg,
     setups: [
       "R L' U2 B2 R L U F2 U2 L2 D' L2 F2 U2 R2 F2",
       "R L' U2 B2 R' L' U R2 B2 D2 B2 D B2 L2 D2 R2",
@@ -214,7 +236,7 @@ const plls: CFOPCase[] = [
     step: 'pll',
     id: 'PLL 13',
     name: 'Nb',
-    image: '/pll/nb.svg',
+    image: pllNbImg,
     setups: [
       "R L F2 D2 R' L D B2 L2 U2 L2 D L2 F2 U2 F2",
       "R L' U2 B2 R L U' L2 B2 D2 B2 D' B2 R2 D2 L2",
@@ -227,7 +249,7 @@ const plls: CFOPCase[] = [
     step: 'pll',
     id: 'PLL 14',
     name: 'Ra',
-    image: '/pll/ra.svg',
+    image: pllRaImg,
     setups: [
       "F B' R2 F B' L2 U B2 U' F2 U R2 F2 D F2",
       "F' B L2 F B' R2 U B2 U' F2 U L2 F2 D B2",
@@ -247,7 +269,7 @@ const plls: CFOPCase[] = [
     step: 'pll',
     id: 'PLL 15',
     name: 'Rb',
-    image: '/pll/rb.svg',
+    image: pllRbImg,
     setups: [
       "R L' B2 R L' F2 U' R2 U L2 U' B2 L2 D' L2",
       "R' L F2 R L' B2 U' R2 U L2 U' F2 L2 D' R2",
@@ -267,7 +289,7 @@ const plls: CFOPCase[] = [
     step: 'pll',
     id: 'PLL 16',
     name: 'T',
-    image: '/pll/t.svg',
+    image: pllTImg,
     setups: [
       "U B2 U B2 D' R2 F2 U' F2 D R2",
       "U B2 U' B2 D L2 F2 U F2 D' L2",
@@ -289,7 +311,7 @@ const plls: CFOPCase[] = [
     step: 'pll',
     id: 'PLL 17',
     name: 'Ua',
-    image: '/pll/ua.svg',
+    image: pllUaImg,
     setups: [
       "F2 U' R2 B2 L2 D L2 B2 R2 U2 F2",
       "R L U2 R L D L2 B2 L2 D' R2 L2 U'",
@@ -307,7 +329,7 @@ const plls: CFOPCase[] = [
     step: 'pll',
     id: 'PLL 18',
     name: 'Ub',
-    image: '/pll/ub.svg',
+    image: pllUbImg,
     setups: [
       "F2 U2 R2 B2 L2 D' L2 B2 R2 U F2",
       "F2 U2 R2 B2 L2 D' L2 B2 R2 U F2",
@@ -329,7 +351,7 @@ const plls: CFOPCase[] = [
     step: 'pll',
     id: 'PLL 19',
     name: 'V',
-    image: '/pll/v.svg',
+    image: pllVImg,
     setups: [
       "R D L' D2 R D' L' U L2 D2 L2 U' R2 U L2 B2 U",
       "R D L' D2 R D' L' U' R2 D B2 D' R2 F2 D2 R2",
@@ -348,7 +370,7 @@ const plls: CFOPCase[] = [
     step: 'pll',
     id: 'PLL 20',
     name: 'Y',
-    image: '/pll/y.svg',
+    image: pllYImg,
     setups: [
       "R U R' B2 R U' R' D' B2 D B2 U B2 L2 U' L2",
       "R U R' B2 R U' R' U' L2 U B2 U B2 L2 D' B2 D",
@@ -367,7 +389,7 @@ const plls: CFOPCase[] = [
     step: 'pll',
     id: 'PLL 21',
     name: 'Z',
-    image: '/pll/z.svg',
+    image: pllZImg,
     setups: [
       "F B' U2 F' B U' L2 U' L2 U' L2 U' L2 U' L2",
       "R L' U2 R' L U F2 U F2 U F2 U F2 U F2",
