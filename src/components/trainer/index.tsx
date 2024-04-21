@@ -24,8 +24,8 @@ function shuffle(questions: TrainerQuestion[]) {
   }
 }
 
-function randomizeSetup(cases: CFOPCase[], name: string) {
-  const setups = cases.find(c => c.name === name)?.setups
+function randomizeSetup(cases: CFOPCase[], id: string) {
+  const setups = cases.find(c => c.id === id)?.setups
   if (!setups) {
     return null
   }
@@ -93,9 +93,9 @@ export function Trainer() {
 
   const onAnswer = useCallback((score: number, attempts: number) => {
     questions.forEach(q => {
-      if (q.case.name === nextQuestion?.case.name) {
+      if (q.case.id === nextQuestion?.case.id) {
         q.score = score;
-        q.case.setup = randomizeSetup(trainingSet, q.case.name) || q.case.setup
+        q.case.setup = randomizeSetup(trainingSet, q.case.id) || q.case.setup
         q.attempts = attempts
       }
     })
