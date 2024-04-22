@@ -215,7 +215,7 @@ const olls: CFOPCase[] = [
       "R' D' L F' L F D F' R L2 D2 B2 U' B2 D' F2 D' F2",
       "R' U' R' U D' R B' R B U L2 B2 D B2 R2 L2 U' R2 D",
     ],
-    solution: "r U r' R U R' U' r U' r'",
+    solution: "r U' r' R U R' U' r U' r'",
     image: oll16img,
   },
   {
