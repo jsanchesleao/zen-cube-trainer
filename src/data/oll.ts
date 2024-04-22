@@ -6,6 +6,11 @@ import oll6img from '../assets/oll/oll6.svg'
 import oll9img from '../assets/oll/oll9.svg'
 import oll10img from '../assets/oll/oll10.svg'
 
+import oll13img from '../assets/oll/oll13.svg'
+import oll14img from '../assets/oll/oll14.svg'
+import oll15img from '../assets/oll/oll15.svg'
+import oll16img from '../assets/oll/oll16.svg'
+
 import oll21img from '../assets/oll/oll21.svg'
 import oll22img from '../assets/oll/oll22.svg'
 import oll23img from '../assets/oll/oll23.svg'
@@ -129,6 +134,89 @@ const olls: CFOPCase[] = [
     ],
     solution: "R U R' U R' F R F' R U2 R'",
     image: oll10img,
+  },
+  {
+    step: 'oll',
+    id: 'OLL 13',
+    name: 'gun',
+    setups: [
+      "B' R B L' U R U R L B2 D2 L2 D L2 F2 L2 D B2",
+      "B' R B L' U R U R L U2 R2 L2 D R2 B2 R2 D' L2",
+      "F R' F2 L F R2 U2 B2 R U F2 L2 B2 D2 F2 D' R2 D R2",
+      "F' L F R' U L U R L F2 D2 R2 D R2 B2 R2 D F2",
+      "F' L F R' U L U R L U2 R2 L2 D L2 F2 L2 D' R2",
+      "F2 R2 F L2 D L' D' L' F' U' R2 U R2 U F2 L2 B2 L2",
+      "L U' F2 U F' U2 F' U L F2 U2 L2 D L2 U F2 U' L2 D'",
+      "L U' F2 U F' U2 F' U L U2 L2 U2 F2 U' B2 D F2 D' B2",
+      "L' B L F' U B U F B U2 F2 B2 D B2 L2 B2 D' F2",
+      "R D2 F2 R' B' R B' U2 L D' R2 F2 R2 B2 L2 U2 D' F2 D",
+      "R U2 L' B' R B' L B2 U' L2 U L2 D' B2 D R2",
+      "R' F R B' U F U F B U2 F2 B2 D F2 R2 F2 D' B2",
+      "R2 B2 R F2 D F' D' F' R' U' B2 U B2 U R2 F2 L2 F2 U2",
+    ],
+    solution: "r U' r' U' r U r' F' U F",
+    image: oll13img,
+  },
+  {
+    step: 'oll',
+    id: 'OLL 14',
+    name: 'anti-gun',
+    setups: [
+      "B L' B R B2 L B2 R' D F2 D R2 F2 D2 B2 U' L2",
+      "B L' B' R U' L' U R L U' F2 R2 B2 D2 F2 L2 B2 U' R2",
+      "B L' B' R U' L' U R' L U2 F2 R2 B2 D' B2 R2 F2",
+      "B L' B' R U' L' U R' L U2 R2 F2 U' R2 B2 L2 D' B2",
+      "F R' F' L U' R' U R L U' F2 R2 F2 U2 B2 L2 B2 U' L2",
+      "F R' F' L U' R' U R L' U2 F2 L2 B2 D' B2 L2 F2 U2",
+      "F R' F' L U' R' U R L' U2 F2 L2 B2 D' B2 L2 F2",
+      "F R' F' L U' R' U R L' U2 F2 L2 B2 U' L2 F2 R2 D'",
+      "L F' L' B U' F' U F B U' R2 F2 R2 U2 L2 B2 L2 U' B2",
+      "L F' L' B U' F' U F B' U2 R2 B2 L2 D' L2 B2 R2",
+      "L F' L' B U' F' U F B' U2 R2 U' B2 L2 F2 D' L2 B2",
+      "R B' R' F U' B' U F' B U2 R2 F2 L2 D' L2 F2 R2",
+      "R B' R' F U' B' U F' B U2 R2 F2 L2 U' F2 R2 B2 D'",
+      "R U2 L' U2 R' B L' B' R2 B2 D R2 F2 R2 D' L2 B2 R2",
+    ],
+    solution: "R' F R U R' F' R F U' F'",
+    image: oll14img,
+  },
+  {
+    step: 'oll',
+    id: 'OLL 15',
+    name: 'squeegee',
+    setups: [
+      "B' R' F R' B' D2 F D F2 L2 F2 D B2 R2 F2",
+      "B' R' F R' B' D2 F D F2 L2 F2 U R2 F2 L2 D",
+      "F' L' B L' F' D2 B D F2 R2 F2 D B2 L2 F2",
+      "F' L' B L' F' D2 B D R2 B2 U L2 B2 R2 D B2",
+      "L' B' R B' L' D2 R D R2 F2 R2 D L2 B2 R2",
+      "R' F' L F' R' D2 L D R2 U' R2 F2 L2 D' R2 B2",
+    ],
+    solution: "r' U r R' U' R U r' U r",
+    image: oll15img,
+  },
+  {
+    step: 'oll',
+    id: 'OLL 16',
+    name: 'anti-squeegee',
+    setups: [
+      "B L F' L B D2 F' D' F2 R2 F2 D' B2 L2 F2",
+      "B L F' L B D2 F' D' R2 F2 U' L2 F2 R2 D' F2",
+      "B' U' B' U D' B L' B L D R2 F2 D F2 R2 L2 U' L2",
+      "F R B' R F D2 B D' B2 L2 B2 D' L2 D2 L2 F2 R2",
+      "F R B' R F D2 B' D' F2 L2 F2 D' B2 R2 F2",
+      "F R B' R F D2 B' D' F2 U F2 R2 B2 D F2 L2",
+      "L F R' F L D2 R' D' R2 B2 R2 U' F2 R2 B2 D'",
+      "L' D' R B' R B D B' L U L2 D L2 U' L2 D2 R2 D L2",
+      "R B L' B R D2 L' D' R2 F2 R2 D' L2 B2 R2",
+      "R B L' B R D2 L' D' R2 F2 R2 D' L2 B2 R2",
+      "R B L' B R D2 L' D' R2 U R2 B2 L2 D R2 F2",
+      "R U2 R' F' U F' L' U' L F2 L2 F2 U L2 U' F2 L2 U F2",
+      "R' D' L F' L F D F' R L2 D2 B2 U' B2 D' F2 D' F2",
+      "R' U' R' U D' R B' R B U L2 B2 D B2 R2 L2 U' R2 D",
+    ],
+    solution: "r U r' R U R' U' r U' r'",
+    image: oll16img,
   },
   {
     step: 'oll',
