@@ -32,13 +32,24 @@ function randomizeSetup(cases: CFOPCase[], id: string) {
   return setups[Math.floor(Math.random() * setups.length)]
 }
 
+function calculateProgress(questions: TrainerQuestion[]) {
+  const total = questions.length * 100
+  let completed = 0;
+  questions.forEach(q => {
+    completed += Math.min(100, q.score)
+  })
+  return Math.floor((100 * completed) / total)
+}
+
 export function Trainer() {
   const [state, setState] = useState<TrainerState>('not-started')
+  const [title, setTitle] = useState<string>('');
   const [trainingSet, setTrainingSet] = useState<CFOPCase[]>([])
   const [questions, setQuestions] = useState<TrainerQuestion[]>([])
   const [nextQuestion, setNextQuestion] = useState<TrainerQuestion | null>(null)
 
-  const onBegin = useCallback((trainingSet: CFOPCase[]) => {
+  const onBegin = useCallback((trainingSet: CFOPCase[], title: string) => {
+    setTitle(title)
     setTrainingSet(trainingSet)
     const questions = trainingSet.map(c => ({
       attempts: 0,
@@ -148,14 +159,27 @@ export function Trainer() {
     }
   
     if (state === 'finished') {
-      return <TrainerFinished onStartOver={() => onBegin(trainingSet)} onExit={onExit} questions={questions} />
+      return <TrainerFinished onStartOver={() => onBegin(trainingSet, title)} onExit={onExit} questions={questions} />
     }
   }
 
   return (
     <Container>
       <TrainerLayout>
-        <Header>Trainer</Header>
+        <Header>
+          {
+            state === 'not-started' && 'Training Selection'
+          }
+          {
+            state === 'finished' && `${title} Training Results`
+          }
+          {
+            state === 'showing-case' && `${title} Training: ${calculateProgress(questions)}%`
+          }
+          {
+            state === 'showing-details' && `Case Details`
+          }
+        </Header>
         {renderContent()}
       </TrainerLayout>
     </Container>

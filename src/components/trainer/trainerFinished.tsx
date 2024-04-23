@@ -5,7 +5,7 @@ import { useMemo } from "react"
 
 const StyledGrid = styled.div`
   display: grid;
-  grid-template-rows: 1fr 4rem 4rem;
+  grid-template-rows: 42rem 4rem 4rem;
   padding: 1rem 0;
   gap: 1rem;
   width: 100%;
@@ -19,11 +19,6 @@ const StyledGrid = styled.div`
 
 const TrainingStatsWrapper = styled.div`
   width: 100%;
-`
-
-const TrainingStatsSubtitle = styled.h2`
-  text-align: center;
-  margin-bottom: 1rem;
 `
 
 const TrainingStatsList = styled.ol`
@@ -73,7 +68,6 @@ export function TrainerFinished(props: TrainerFinishedProps) {
   return (
     <StyledGrid>
       <TrainingStatsWrapper>
-        <TrainingStatsSubtitle>Training Stats</TrainingStatsSubtitle>
         <TrainingStatsList>
           {sortedQuestions.map(q => (
             <TrainingStatsListItem>

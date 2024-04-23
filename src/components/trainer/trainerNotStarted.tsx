@@ -15,15 +15,15 @@ const Wrapper = styled.div`
 `
 
 export type TrainerNotStartedProps = {
-  onBegin: (trainingSet: CFOPCase[]) => void
+  onBegin: (trainingSet: CFOPCase[], title: string) => void
 }
 
 export function TrainerNotStarted(props: TrainerNotStartedProps) {
   return (
     <Wrapper>
-      <Button className="row-2" onClick={() => props.onBegin(f2ls)}>Begin F2L</Button>
-      <Button className="row-3" onClick={() => props.onBegin(olls)}>Begin OLL</Button>
-      <Button className="row-4" onClick={() => props.onBegin(plls)}>Begin PLL</Button>
+      <Button className="row-2" onClick={() => props.onBegin(f2ls, 'F2L')}>Begin F2L</Button>
+      <Button className="row-3" onClick={() => props.onBegin(olls, 'OLL')}>Begin OLL</Button>
+      <Button className="row-4" onClick={() => props.onBegin(plls, 'PLL')}>Begin PLL</Button>
     </Wrapper>
   )
 }
