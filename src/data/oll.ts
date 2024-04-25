@@ -1,47 +1,48 @@
 import { CFOPCase } from "../model/CFOP";
 
-import oll5img from '../assets/oll/oll5.svg'
-import oll6img from '../assets/oll/oll6.svg'
+import oll5img from '../assets/oll/oll5.svg';
+import oll6img from '../assets/oll/oll6.svg';
 
-import oll9img from '../assets/oll/oll9.svg'
-import oll10img from '../assets/oll/oll10.svg'
+import oll10img from '../assets/oll/oll10.svg';
+import oll9img from '../assets/oll/oll9.svg';
 
-import oll13img from '../assets/oll/oll13.svg'
-import oll14img from '../assets/oll/oll14.svg'
-import oll15img from '../assets/oll/oll15.svg'
-import oll16img from '../assets/oll/oll16.svg'
+import oll13img from '../assets/oll/oll13.svg';
+import oll14img from '../assets/oll/oll14.svg';
+import oll15img from '../assets/oll/oll15.svg';
+import oll16img from '../assets/oll/oll16.svg';
 
-import oll21img from '../assets/oll/oll21.svg'
-import oll22img from '../assets/oll/oll22.svg'
-import oll23img from '../assets/oll/oll23.svg'
-import oll24img from '../assets/oll/oll24.svg'
-import oll25img from '../assets/oll/oll25.svg'
-import oll26img from '../assets/oll/oll26.svg'
-import oll27img from '../assets/oll/oll27.svg'
-import oll28img from '../assets/oll/oll28.svg'
+import oll21img from '../assets/oll/oll21.svg';
+import oll22img from '../assets/oll/oll22.svg';
+import oll23img from '../assets/oll/oll23.svg';
+import oll24img from '../assets/oll/oll24.svg';
+import oll25img from '../assets/oll/oll25.svg';
+import oll26img from '../assets/oll/oll26.svg';
+import oll27img from '../assets/oll/oll27.svg';
+import oll28img from '../assets/oll/oll28.svg';
+import oll29img from '../assets/oll/oll29.svg';
+import oll30img from '../assets/oll/oll30.svg';
+import oll31img from '../assets/oll/oll31.svg';
+import oll32img from '../assets/oll/oll32.svg';
+import oll33img from '../assets/oll/oll33.svg';
 
-import oll31img from '../assets/oll/oll31.svg'
-import oll32img from '../assets/oll/oll32.svg'
-import oll33img from '../assets/oll/oll33.svg'
+import oll34img from '../assets/oll/oll34.svg';
+import oll35img from '../assets/oll/oll35.svg';
+import oll36img from '../assets/oll/oll36.svg';
+import oll37img from '../assets/oll/oll37.svg';
+import oll38img from '../assets/oll/oll38.svg';
 
-import oll34img from '../assets/oll/oll34.svg'
-import oll35img from '../assets/oll/oll35.svg'
-import oll36img from '../assets/oll/oll36.svg'
-import oll37img from '../assets/oll/oll37.svg'
-import oll38img from '../assets/oll/oll38.svg'
+import oll43img from '../assets/oll/oll43.svg';
+import oll44img from '../assets/oll/oll44.svg';
+import oll45img from '../assets/oll/oll45.svg';
 
-import oll43img from '../assets/oll/oll43.svg'
-import oll44img from '../assets/oll/oll44.svg'
-import oll45img from '../assets/oll/oll45.svg'
+import oll46img from '../assets/oll/oll46.svg';
 
-import oll46img from '../assets/oll/oll46.svg'
+import oll51img from '../assets/oll/oll51.svg';
+import oll52img from '../assets/oll/oll52.svg';
 
-import oll51img from '../assets/oll/oll51.svg'
-import oll52img from '../assets/oll/oll52.svg'
-
-import oll55img from '../assets/oll/oll55.svg'
-import oll56img from '../assets/oll/oll56.svg'
-import oll57img from '../assets/oll/oll57.svg'
+import oll55img from '../assets/oll/oll55.svg';
+import oll56img from '../assets/oll/oll56.svg';
+import oll57img from '../assets/oll/oll57.svg';
 
 const olls: CFOPCase[] = [
   {
@@ -384,6 +385,52 @@ const olls: CFOPCase[] = [
     ],
     solution: "r U R' U' R' R U R U' R'",
     image: oll28img,
+  },
+  {
+    step: 'oll',
+    id: 'OLL 29',
+    name: 'spotted chameleon',
+    setups: [
+      "B2 U L' D B D' B' L' D R2 F2 R2 D' L2 D' R2 D R2",
+      "F R' U R2 U' R F' U2 F2 U' F2 D R2 D' R2",
+      "F R' U R2 U' R F' U2 F2 U' F2 U F2 D' F2 D",
+      "F' U' F' U F R' F R U' R2 U B2 L2 F2 D L2 B2",
+      "F2 U' F' L F2 L' F U' R2 U F2 U F2 U' R2",
+      "L U L U' L' B L' B' L2 D' B2 D L2 B2 U L2 U' B2",
+      "L' U' L' U L F' L F U' R2 B2 U' F2 L2 B2 D' F2",
+      "R B R' U' F2 R B' R D F2 U F2 B2 D F2 L2 B2",
+      "R B R' U' F2 R B' R D F2 U F2 B2 D F2 L2 B2",
+      "R B' U B2 U' B R' U2 R2 U' R2 D B2 D' B2 U2",
+      "R B' U B2 U' B R' U2 R2 U' R2 U R2 D' R2 D",
+      "R' U' R' U R B' R B U' L2 F2 U' B2 R2 F2 D' B2",
+      "R2 U B R' B2 R B' L2 D' F2 D R2 D F2 D' R2 L2",
+      "R2 U' R' F R2 F' R U' B2 U R2 U R2 U' B2",
+      "U B2 U L' D B D' B' L' D R2 F2 R2 D' L2 D' R2 D R2",
+      "U F2 U R' D F D' F' R' D L2 B2 L2 D' R2 D' L2 D L2",
+      "U2 F2 U R' D F D' F' R' D L2 B2 L2 D' R2 D' L2 D L2",
+    ],
+    solution: "y R U R' U' R U' R' F' U' F R U R'",
+    image: oll29img,
+  },
+  {
+    step: 'oll',
+    id: 'OLL 30',
+    name: 'anti-spotted chameleon',
+    setups: [
+      "F U' R U2 R' U F U2 F2 L2 U' F2 U' F2 U L2",
+      "F' U' F' U F R' F R F2 D R2 D' F2 R2 U' F2 U R2",
+      "L2 U' B D' L' D L B D' F2 R2 F2 D B2 D F2 D' F2",
+      "R B U' B' R' F' U F L2 U L2 D' B2 R2 U' R2 D B2",
+      "R' L2 F D F' D' R U2 F2 U L2 U2 F2 U' L2 U2 F2",
+      "R' U' R B L U L' B U' B2 D L2 F2 U F2 D' L2",
+      "R' U' R' U R B' R B R2 D B2 D' R2 B2 U' R2 U B2",
+      "R2 U' F D' R' D R F D' B2 L2 B2 D F2 D B2 D' B2",
+      "U F' U' F' U F R' F R F2 D R2 D' F2 R2 U' F2 U R2",
+      "U F2 B' R D R' D' B U2 R2 U F2 U2 R2 U' F2 U2 R2",
+      "U R' U' R' U R B' R B R2 D B2 D' R2 B2 U' R2 U B2",
+    ],
+    solution: "y2 F U R U2 R' U' R U2 R' U' F'",
+    image: oll30img,
   },
   {
     step: 'oll',
