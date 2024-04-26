@@ -31,6 +31,8 @@ import oll36img from '../assets/oll/oll36.svg';
 import oll37img from '../assets/oll/oll37.svg';
 import oll38img from '../assets/oll/oll38.svg';
 
+import oll41img from '../assets/oll/oll41.svg';
+import oll42img from '../assets/oll/oll42.svg';
 import oll43img from '../assets/oll/oll43.svg';
 import oll44img from '../assets/oll/oll44.svg';
 import oll45img from '../assets/oll/oll45.svg';
@@ -637,6 +639,51 @@ const olls: CFOPCase[] = [
     ],
     solution: "R U R' U R U' R' U' R' F R F'",
     image: oll38img,
+  },
+  {
+    step: 'oll',
+    id: 'OLL 41',
+    name: 'awkward fish',
+    setups: [
+      "B U L U L D2 R2 F' U2 R2 D' L2 D' B2",
+      "F L F' R' F' L' F R' L2 D B2 D' R2 L2 F2",
+      "F U F R L2 B' R D' B R2 L2 F2",
+      "F U R U R D2 L2 B' U2 L2 D' R2 D' F2",
+      "F U' R U2 R' U F' U' L2 U' L2 U' L2 U2 L2",
+      "F2 R2 B' D R D' R' B R2 U F2 D' F2 D R2 U' R2 F2",
+      "L U F U F D2 B2 R' U2 B2 D' F2 D' L2",
+      "L' U' B' U B R2 L U F2 R2 F2 U2 F2 R2 F2 U R2",
+      "R F R' B' R' F' R B R2 F2 L2 D' B2 D L2 F2",
+      "R U B' U' B2 U B U' R U B2 U' R2 L2 D F2 D' L2",
+      "R U B' U' B2 U B U' R' U2 R2 F2 L2 D L2 F2 R2",
+      "R U R' F' L' U' L F R2 F2 B2 L2 D' R2 F2 B2 L2",
+      "R' F' U F R B U' B R2 L2 F2 D F2 R2 L2 B2",
+      "U2 B' U' R' U R F2 B U R2 F2 R2 U2 R2 F2 R2 U F2",
+    ],
+    solution: "y2 R U R' U R U2 R' F R U R' U' F'",
+    image: oll41img,
+  },
+  {
+    step: 'oll',
+    id: 'OLL 42',
+    name: 'anti-awkward fish',
+    setups: [
+      "B L' B' R2 F2 L F2 L' F2 U B2 D L2 F2 D L2 B2",
+      "F R' F' L2 B2 R B2 R' B2 U F2 D R2 B2 D R2 F2",
+      "F' U' L U F L U' L' U' F2 R2 B2 D2 B2 R2 F2",
+      "F2 L2 B D' L' D L B' L2 U' F2 D F2 D' L2 U L2 F2",
+      "L F' L' B2 R2 F R2 F' R2 U L2 D F2 R2 D F2 L2",
+      "R B R U R' B' R U' B2 D' F2 D B2 D' F2 D R2",
+      "R B' R' F2 L2 B L2 B' L2 U R2 D B2 L2 D B2 R2",
+      "R U' F' B L2 F U' B' R' U2 F2 L2 F2 U' F2 L2 F2",
+      "R' U' F U R F U' F' U' R2 F2 R2 U2 R2 F2 R2",
+      "R2 B2 U' R' F R2 F' R' F2 U' R2 U R2 U F2 B2 R2",
+      "R2 F2 U' F' R F2 R' F R2 U B2 D' F2 L2 D F2 B2 R2",
+      "R2 U R' U2 R' U2 B' R' B R2 F2 U2 R2 U' R2 U' F2 U' R2",
+      "R2 U R' U2 R' U2 B' R' B' D2 F2 U' D F2 R2 D R2 U B2",
+    ],
+    solution: "R' U' R U' R' U2 R F R U R' U' F'",
+    image: oll42img,
   },
   {
     step: 'oll',
