@@ -8,7 +8,7 @@ const StyledGrid = styled.div`
   padding: 1rem;
   gap: 1rem;
   margin: auto;
-  height: 100%;
+  height: 90%;
   width: 100%;
   max-width: 25rem;
 `

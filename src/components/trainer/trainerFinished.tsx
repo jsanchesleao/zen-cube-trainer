@@ -5,16 +5,23 @@ import { useMemo } from "react"
 
 const StyledGrid = styled.div`
   display: grid;
-  grid-template-rows: 42rem 4rem 4rem;
-  padding: 1rem 0;
+  grid-template-rows: 75vh 1fr;
+  padding: 0 0 1rem 0;
   gap: 1rem;
   width: 100%;
   margin-inline: auto;
 
   ${Button} {
     width: 25rem;
-    margin: auto;
   }
+`
+
+const ButtonsWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 1rem;
+  padding: 0 2rem;
 `
 
 const TrainingStatsWrapper = styled.div`
@@ -24,7 +31,7 @@ const TrainingStatsWrapper = styled.div`
 const TrainingStatsList = styled.ol`
   list-style: none;
   width: 100%;
-  max-height: 65vh;
+  max-height: 75vh;
   overflow: auto;
 `
 
@@ -79,8 +86,10 @@ export function TrainerFinished(props: TrainerFinishedProps) {
         </TrainingStatsList>
         <hr />
       </TrainingStatsWrapper>
-      <Button onClick={props.onStartOver}>Start Over</Button>
-      <Button data-variant="success" onClick={props.onExit}>Exit</Button>
+      <ButtonsWrapper>
+        <Button onClick={props.onStartOver}>Start Over</Button>
+        <Button data-variant="success" onClick={props.onExit}>Exit</Button>
+      </ButtonsWrapper>
     </StyledGrid>
   )
 }
