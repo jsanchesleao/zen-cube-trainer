@@ -74,7 +74,7 @@ const f2ls: CFOPCase[] = [
       "F' U' F",
       "R' F R F'",
       "U F' U' F",
-      "U L' U' L'",
+      "U L' U' L",
       "U R L' B' R B' L U2 R2 F2 L2 D2 L2 F2",
       "U R' F R F'",
       "U' F' U' F",
