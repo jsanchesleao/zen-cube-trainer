@@ -3,8 +3,8 @@ import { CFOPCase } from "../model/CFOP";
 import oll5img from '../assets/oll/oll5.svg';
 import oll6img from '../assets/oll/oll6.svg';
 
-import oll10img from '../assets/oll/oll10.svg';
 import oll9img from '../assets/oll/oll9.svg';
+import oll10img from '../assets/oll/oll10.svg';
 
 import oll13img from '../assets/oll/oll13.svg';
 import oll14img from '../assets/oll/oll14.svg';
@@ -24,7 +24,6 @@ import oll30img from '../assets/oll/oll30.svg';
 import oll31img from '../assets/oll/oll31.svg';
 import oll32img from '../assets/oll/oll32.svg';
 import oll33img from '../assets/oll/oll33.svg';
-
 import oll34img from '../assets/oll/oll34.svg';
 import oll35img from '../assets/oll/oll35.svg';
 import oll36img from '../assets/oll/oll36.svg';
@@ -36,12 +35,15 @@ import oll42img from '../assets/oll/oll42.svg';
 import oll43img from '../assets/oll/oll43.svg';
 import oll44img from '../assets/oll/oll44.svg';
 import oll45img from '../assets/oll/oll45.svg';
-
 import oll46img from '../assets/oll/oll46.svg';
-
+import oll47img from '../assets/oll/oll47.svg';
+import oll48img from '../assets/oll/oll48.svg';
+import oll49img from '../assets/oll/oll49.svg';
+import oll50img from '../assets/oll/oll50.svg';
 import oll51img from '../assets/oll/oll51.svg';
 import oll52img from '../assets/oll/oll52.svg';
 
+import oll54img from '../assets/oll/oll54.svg';
 import oll55img from '../assets/oll/oll55.svg';
 import oll56img from '../assets/oll/oll56.svg';
 import oll57img from '../assets/oll/oll57.svg';
@@ -762,6 +764,91 @@ const olls: CFOPCase[] = [
   },
   {
     step: 'oll',
+    id: 'OLL 47',
+    name: 'anti-breakneck',
+    setups: [
+      "B D F2 D2 L' D L B D2 R2 B2 U' B2 R2 F2 D2 B2",
+      "B D F2 D2 L' D L B U2 L2 F2 U' F2 L2 B2 D2 F2 D2",
+      "B2 L' B' L F2 D2 F' R2 F' U D F2 U' R2 U F2 U B2 L2",
+      "F D B2 D2 R' D R F D2 L2 F2 U' F2 L2 B2 D2 F2",
+      "F D B2 D2 R' D R F U2 R2 B2 U' B2 R2 F2 D2 B2 D2",
+      "F D' F2 L' U' L U2 F2 D F U2 R2 U' R2 U' F2 R2 U R2",
+      "F2 R' F' R B2 D2 B' L2 B' U' L2 F2 U B2 U R2 U' B2 D",
+      "L D R2 D2 F' D F L D2 B2 L2 U' L2 B2 R2 D2 L2",
+      "L2 F' L' F R2 D2 R' B2 R' U D R2 U' B2 U R2 U L2 F2",
+      "L2 F' L' F R2 D2 R' B2 R' U' B2 L2 U R2 U F2 U' R2 D",
+      "R D L2 D2 B' D B R D2 F2 R2 U' R2 F2 L2 D2 R2",
+      "R2 B' R' B L2 D2 L' F2 L' D2 F2 U' R2 D R2 D F2 R2 D",
+      "R2 B' R' B L2 D2 L' F2 L' U' F2 R2 U L2 U B2 U' L2 D",
+      "U' L2 F R' F B2 R B2 R U' L2 D2 B2 R2 D' F2 R2 D' F2",
+      "U2 B2 L F' R2 L F R2 F U' B2 D2 R2 F2 D' L2 F2 D' L2",
+    ],
+    solution: "F' L' U' L U L' U' L U F",
+    image: oll47img,
+  },
+  {
+    step: 'oll',
+    id: 'OLL 48',
+    name: 'breakneck',
+    setups: [
+      "F U R U' R' U R U' R' F' U2",
+      "F' U' F U F2 U2 R' F R D' F2 D F2 U2 F2 R2 U' R2",
+      "F' U' F U F2 U2 R' F R U' R2 U F2 U2 F2 R2 D' F2 D",
+      "L2 B L B' R2 D2 R F2 R U F2 L2 U' R2 U' B2 U R2 D'",
+      "L2 B' R F2 B' R' F2 R' D' B2 U' R2 B2 D2 F2 L2 D' B2",
+      "R B2 R U F2 B2 U2 F R' F' B2 U' B2 U2 F2 B2 U' R2",
+      "R U B U' B' U B U' B' R'",
+      "R U' B' U' R' U F' R2 D2 B' D2 B2 U' F2 U' F2 U2 R2 U' F2",
+      "R' U' R U R2 U2 B' R B D' R2 D R2 U2 R2 B2 U' B2 U2",
+      "R' U' R U R2 U2 B' R B U' B2 U R2 U2 R2 B2 D' R2 D",
+      "R2 F2 R D' L2 D2 F D' F' R' D2 L2 D L2 U B2 L2 F2 D",
+      "R2 F2 R D' L2 D2 F D' F' R' U2 R2 D R2 D R2 B2 L2 D2",
+      "U F2 L F L' B2 D2 B R2 B U' D' B2 U R2 U' B2 U' F2 L2",
+      "U R2 F R F' L2 D2 L B2 L U' D' L2 U B2 U' L2 U' R2 F2",
+      "U R2 F' L F' B2 L' B2 L' D' F2 U' R2 B2 U2 F2 L2 D' F2",
+      "U' B2 R' F R' L2 F' L2 F' D' R2 U' F2 R2 D2 L2 B2 D' R2",
+      "U2 R2 F' L F' B2 L' B2 L' D' F2 U' R2 B2 U2 F2 L2 D' F2",
+    ],
+    solution: "F R U R' U' R U R' U' F'",
+    image: oll48img,
+  },
+  {
+    step: 'oll',
+    id: 'OLL 49',
+    name: 'right back squeezy',
+    setups: [
+      "B L2 B2 R B R2 F2 R B2 U2 B2 R2 F2 D2 R2",
+      "F R2 F2 L F R2 F2 L B2 U2 F2 R2 B2 D2 R2",
+      "L F2 L2 B L F2 L2 B R2 U2 L2 F2 R2 D2 F2",
+      "R B U2 B' R' U' R U' R' F2 D B2 D B2 D2 F2 R2 U' R2",
+      "R B2 R2 F R F2 L2 F R2 U2 R2 F2 L2 D2 F2",
+      "R' F' U F R' U' F D' F' D R2 U F2 U B2 D' F2 D B2",
+    ],
+    solution: "y2 r U' r2 U r2 U r2 U' r",
+    image: oll49img,
+  },
+  {
+    step: 'oll',
+    id: 'OLL 50',
+    name: 'right front squeezy',
+    setups: [
+      "F R2 B2 R F R2 B2 R B2 U2 F2 L2 B2 D2 L2",
+      "L F' L' U2 F2 D' B L2 B' D R2 U2 R2 F2 R2 U2 R2",
+      "L F2 R2 F L F2 R2 F R2 U2 L2 B2 R2 D2 B2",
+      "R B L2 D' R2 U F2 U' F R U2 B2 U R2 D2 F2 D' R2 U2 B2",
+      "R B' R' U2 B2 D' F R2 F' D R2 U2 R2 B2 R2 U2 R2",
+      "R B2 L2 B R F2 R2 B R2 U2 R2 B2 L2 D2 B2",
+      "R U' B' R B2 L2 D' R2 U F' B2 R2 F2 D' L2 F2 D' L2 D' R2",
+      "R U' B2 R2 D' R' D2 F' L F' D' R2 B2 U2 B2 U B2 U' L2 B2",
+      "R U2 L' B2 L F' L F' D2 L D B2 U' L2 D F2 R2 D' R2",
+      "R' U' R U' L' B U' B U L U' F2 R2 U' L2 B2 R2 D' L2",
+      "R2 U B' U' D2 R' U' R' L2 F U' R2 L2 B2 D R2 U F2 U F2",
+    ],
+    solution: "r' U r2 U' r2 U' r2 U r'",
+    image: oll50img,
+  },
+  {
+    step: 'oll',
     id: 'OLL 51',
     name: 'bottlecap',
     setups: [
@@ -804,6 +891,30 @@ const olls: CFOPCase[] = [
     ],
     solution: "y2 R' F' U' F U' R U R' U R",
     image: oll52img,
+  },
+  {
+    step: 'oll',
+    id: 'OLL 54',
+    name: 'anti-frying pan',
+    setups: [
+      "B R' U2 R U L' B D L D2 R2 U2 F2 D L2 D' F2 R2 D",
+      "B R' U2 R U L' B D L D2 R2 U2 F2 U B2 D' L2 F2 D2",
+      "B2 U' B' R B' U2 L F2 L' U2 R2 U B2 L2 D R2 F2 D' L2",
+      "B2 U' B' R B' U2 R U2 R U' B2 R2 U B2 U2 R2 B2",
+      "F L' U2 L U R' F D R U D' L2 D2 B2 D' B2 D' L2 F2",
+      "F2 U' F' L F' U2 R B2 R' U2 L2 U F2 R2 D L2 B2 D' R2",
+      "L' U2 L' U2 D' L' B' L B U2 L2 D F2 U' F2 L2 U2 L2",
+      "L2 U' L' B L' U2 F R2 F' L2 B2 U' F2 R2 D2 B2 D' F2",
+      "L2 U' L' B L' U2 F R2 F' L2 B2 U' F2 R2 U2 F2 D' B2 D2",
+      "L2 U' L' B L' U2 F R2 F' U2 B2 U L2 F2 D B2 R2 D' F2",
+      "R F' U2 F U B' R D B D2 F2 U2 L2 U R2 D' B2 L2 D2",
+      "R' F' B L F' L F2 B' R' U2 R2 U F2 U2 B2 D F2 D B2",
+      "R2 U' R' F R' U2 F U2 F U' R2 F2 U R2 U2 F2 R2",
+      "U L B' U2 B U F' L D F D2 B2 U2 R2 U L2 D' F2 R2 D2",
+      "U R U' B' R U B' U' D B L2 D' R2 U2 D L2 D' B2 U B2",
+    ],
+    solution: "r U R' U R U' R' U R U2 r'",
+    image: oll54img,
   },
   {
     step: 'oll',

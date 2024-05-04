@@ -31,7 +31,7 @@ const TrainingStatsWrapper = styled.div`
 const TrainingStatsList = styled.ol`
   list-style: none;
   width: 100%;
-  max-height: 75vh;
+  max-height: 65vh;
   overflow: auto;
 `
 
