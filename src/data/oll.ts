@@ -42,7 +42,7 @@ import oll49img from '../assets/oll/oll49.svg';
 import oll50img from '../assets/oll/oll50.svg';
 import oll51img from '../assets/oll/oll51.svg';
 import oll52img from '../assets/oll/oll52.svg';
-
+import oll53img from '../assets/oll/oll53.svg';
 import oll54img from '../assets/oll/oll54.svg';
 import oll55img from '../assets/oll/oll55.svg';
 import oll56img from '../assets/oll/oll56.svg';
@@ -891,6 +891,30 @@ const olls: CFOPCase[] = [
     ],
     solution: "y2 R' F' U' F U' R U R' U R",
     image: oll52img,
+  },
+  {
+    step: 'oll',
+    id: 'OLL 53',
+    name: 'frying pan',
+    setups: [
+      "B2 U B L' B U2 R' F2 R U2 L2 U' B2 R2 D' L2 F2 D R2",
+      "F' L' U2 L F U F' U F' D2 L2 D L2 D F2 U R2 U2 R2",
+      "F' L' U2 L F U F' U F' U L2 U2 F2 U' F2 U' L2 U' F2",
+      "F' U L2 F2 B2 R D R F B2 U' F2 R2 U' B2 D' B2 U2 R2",
+      "F2 U F R' F U2 L' B2 L U2 R2 U' F2 L2 D' R2 B2 D L2",
+      "L' B' U2 B L U L' U L' D2 B2 D B2 D L2 U F2 U2 F2",
+      "L' B' U2 B L U L' U L' U B2 U2 L2 U' L2 U' B2 U' L2",
+      "L2 U L F' L U2 F' U2 F' U L2 F2 U' L2 U2 F2 L2",
+      "R' U F R' U' F U D' F' L2 D R2 U F2 U F2 D' L2 D",
+      "R' U F2 R2 L2 B D B R L2 U' R2 B2 U' L2 D' L2 U2 B2",
+      "R2 U R B' R U2 F' L2 F R2 B2 U F2 L2 D2 B2 D F2",
+      "R2 U R B' R U2 F' L2 F R2 B2 U F2 L2 U2 F2 D B2 D2",
+      "R2 U R B' R U2 F' L2 F U2 B2 U' R2 F2 D' B2 L2 D F2",
+      "U B2 U B L' B U2 R' F2 R U2 L2 U' B2 R2 D' L2 F2 D R2",
+      "U L2 U L F' L U2 B' R2 B U2 F2 U' L2 B2 D' F2 R2 D B2",
+    ],
+    solution: "r' U' R U' R' U R U' R' U2 r",
+    image: oll53img,
   },
   {
     step: 'oll',
