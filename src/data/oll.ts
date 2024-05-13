@@ -2,10 +2,12 @@ import { CFOPCase } from "../model/CFOP";
 
 import oll5img from '../assets/oll/oll5.svg';
 import oll6img from '../assets/oll/oll6.svg';
-
+import oll7img from '../assets/oll/oll7.svg';
+import oll8img from '../assets/oll/oll8.svg';
 import oll9img from '../assets/oll/oll9.svg';
 import oll10img from '../assets/oll/oll10.svg';
-
+import oll11img from '../assets/oll/oll11.svg';
+import oll12img from '../assets/oll/oll12.svg';
 import oll13img from '../assets/oll/oll13.svg';
 import oll14img from '../assets/oll/oll14.svg';
 import oll15img from '../assets/oll/oll15.svg';
@@ -29,7 +31,8 @@ import oll35img from '../assets/oll/oll35.svg';
 import oll36img from '../assets/oll/oll36.svg';
 import oll37img from '../assets/oll/oll37.svg';
 import oll38img from '../assets/oll/oll38.svg';
-
+import oll39img from '../assets/oll/oll39.svg';
+import oll40img from '../assets/oll/oll40.svg';
 import oll41img from '../assets/oll/oll41.svg';
 import oll42img from '../assets/oll/oll42.svg';
 import oll43img from '../assets/oll/oll43.svg';
@@ -79,10 +82,47 @@ const olls: CFOPCase[] = [
       "L F R' F R F2 L'",
       "L' U2 R B L' B R F2 L2 U L2 F2 R2 D L2",
       "R B L' B R D2 L F2 L2 D2 R2 B2 L2",
-
     ],
     solution: "r U2 R' U' R U' r'",
     image: oll6img,
+  },
+  {
+    step: 'oll',
+    id: 'OLL 7',
+    name: 'fatsune',
+    setups: [
+      "B' R' F R' F' R2 B R2 F2 U B2 U' F2 U B2 U' R2",
+      "B' R' F R' F' R2 B' D' R2 D L2 D' R2 D L2 B2",
+      "B' R' F R' F' R2 B' R2 U B2 U' R2 U B2 D' R2 D",
+      "F R2 B' R' B R' F'",
+      "F U2 B' R' F R' B U2 F2 R2 F2 U2 F2 R2",
+      "L' B' R B' R' B2 L' D' B2 D F2 D' B2 D F2 L2",
+      "R B2 L' B' L B' R'",
+      "R U2 L' B' R B' L U2 R2 F2 L2 D2 L2 F2",
+      "R' F' L F' L' F2 R' D' F2 D B2 D' F2 D B2 R2",
+    ],
+    solution: "r U R' U R U2 r'",
+    image: oll7img,
+  },
+  {
+    step: 'oll',
+    id: 'OLL 8',
+    name: 'anti-fatsune',
+    setups: [
+      "B L F' L F L2 B D L2 D' R2 D L2 D' R2 B2",
+      "B L F' L F L2 B L2 D' R2 D L2 D' R2 D B2",
+      "F R B' R B R2 F D R2 D' L2 D R2 D' L2 F2",
+      "F R B' R B R2 F D R2 U' F2 U R2 U' F2 R2 D'",
+      "F R B' R B R2 F R2 D' L2 D R2 D' L2 D F2",
+      "F' L2 B L B' L F",
+      "F' U2 B L F' L B U2 F2 R2 B2 D2 B2 R2 B2",
+      "L F R' F R F2 L D F2 D' B2 D F2 D' B2 L2",
+      "L F R' F R F2 L F2 D' B2 D F2 D' B2 D L2",
+      "R' F2 L F L' F R",
+      "R' U2 L F R' F L U2 R2 F2 R2 U2 R2 F2 L2",
+    ],
+    solution: "y2 r' U' R U' R' U2 r",
+    image: oll8img,
   },
   {
     step: 'oll',
@@ -139,6 +179,58 @@ const olls: CFOPCase[] = [
     ],
     solution: "R U R' U R' F R F' R U2 R'",
     image: oll10img,
+  },
+  {
+    step: 'oll',
+    id: 'OLL 11',
+    name: 'downstairs',
+    setups: [
+      "B' R B' R D2 L' F2 L U' R2 B2 D' B2 R2 D2 R2 U B2",
+      "B' R2 F' R2 B' R' F R' F2 D2 R2 D2 R2 F2 D R2 D B2",
+      "B2 L' B R B R' B2 L U B2 U R2 U' B2 U' B2 U R2",
+      "B2 R D B U B' U' D' R U L2 U2 B2 U B2 U R2 L2 B2",
+      "B2 R D B U B' U' D' R' U B2 L2 U2 L2 U' L2 U' L2",
+      "F' L F' L D2 R' B2 R U' L2 F2 D' F2 L2 D2 L2 U F2",
+      "F2 R' F L F L' F2 R D' F2 D' B2 D F2 D' B2 D2 F2",
+      "L F2 R' F' R F' R2 L F2 R2 L2 B2 U R2 L2 D R2 L2",
+      "L F2 R' F' R F' R2 L U R2 F2 B2 L2 F2 B2 U' R2 L2",
+      "L2 B D L U L' U' D' B U F2 U2 L2 U L2 U F2 B2 L2",
+      "L2 B D L U L' U' D' B' U L2 F2 U2 F2 U' F2 U' F2",
+      "L2 F' L B L B' L2 F D' L2 D' R2 D L2 D' R2 D2 L2",
+      "R' F R' F D2 B' L2 B U' F2 R2 D' R2 F2 D2 F2 U R2",
+      "R2 B' R F R F' R2 B U B2 D2 F2 D F2 D B2 U R2",
+      "R2 F D R U R' U' D' F' U R2 B2 U2 B2 U' B2 U' B2",
+      "U F' L F' L D2 R' B2 R U' L2 F2 D' F2 L2 D2 L2 U F2",
+      "U L F2 R' F' R F' R2 L U R2 F2 B2 L2 F2 B2 U' R2 L2",
+      "U L' B2 R' B2 L' B' R B' R2 D2 B2 D2 B2 R2 D B2 D L2",
+      "U R' F2 L' F2 R' F' L F' L2 D2 F2 D2 F2 L2 D F2 D R2",
+    ],
+    solution: "r' R2 U R' U R U2 R' U M'",
+    image: oll11img,
+  },
+  {
+    step: 'oll',
+    id: 'OLL 12',
+    name: 'upstairs',
+    setups: [
+      "B L F' L B D2 F' D2 R2 F2 U F2 R2 B2 D F2",
+      "B L F' L F L2 B U' R2 F2 L2 D2 L2 F2 R2 U' B2",
+      "B L' B L' D2 R F2 R' U L2 B2 D B2 L2 D2 L2 U' B2",
+      "B' R2 F R F' R F2 B' R2 F2 B2 L2 U' F2 B2 D' F2 B2",
+      "F R B' R F D2 B' D2 L2 B2 U B2 L2 F2 D B2",
+      "F R' F R' D2 L B2 L' U R2 F2 D F2 R2 D2 R2 U' F2",
+      "L F R' F L D2 R' D2 R2 U L2 B2 R2 D R2 B2",
+      "L' B2 R B R' B R2 L' F2 R2 L2 B2 U' R2 L2 D' R2 L2",
+      "R B L' B R D2 L' D2 F2 L2 U L2 F2 R2 D L2",
+      "R B' R B' D2 F L2 F' U B2 R2 D R2 B2 D2 B2 U' R2",
+      "U L' B2 R B R' B R2 L' F2 R2 L2 B2 U' R2 L2 D' R2 L2",
+      "U2 B L' B L' D2 R F2 R' U L2 B2 D B2 L2 D2 L2 U' B2",
+      "U2 B' R2 F R F' R F2 B' R2 F2 B2 L2 U' F2 B2 D' F2 B2",
+      "U2 L F' L F' D2 B R2 B' U F2 L2 D L2 F2 D2 F2 U' L2",
+      "U2 L' B2 R B R' B R2 L' F2 R2 L2 B2 U' R2 L2 D' R2 L2",
+    ],
+    solution: "y' r R2' U' R U' R' U2 R U' R r'",
+    image: oll12img,
   },
   {
     step: 'oll',
@@ -641,6 +733,57 @@ const olls: CFOPCase[] = [
     ],
     solution: "R U R' U R U' R' U' R' F R F'",
     image: oll38img,
+  },
+  {
+    step: 'oll',
+    id: 'OLL 39',
+    name: 'fung',
+    setups: [
+      "B' U2 L' B L F' L2 F U2 F2 U' B2 U F2 B2 L2 U' L2",
+      "F' B2 L F U2 R B2 R B2 R2 U' B2 R2 U F2 D F2",
+      "F2 B L' B' U2 R' F2 R F2 R2 B2 L2 D' L2 D' B2 R2",
+      "F2 B' R B U2 L F2 L F2 L2 U' F2 L2 U B2 D B2",
+      "F2 B' R B U2 R U2 R' F2 R2 F2 U' R2 U' F2 R2 U F2",
+      "F2 R2 B' D R D' R' B U R2 F2 D R2 D' R2 F2 U' F2",
+      "R' L2 F R U2 B L2 B L2 B2 U' L2 B2 U R2 D R2",
+      "R' L2 F R U2 F U2 F' L2 F2 L2 U' F2 U' L2 F2 U L2",
+      "R' U' R' F' R U F R' D2 L2 D L2 D R2",
+      "R2 L F' L' U2 B' R2 B R2 B2 L2 F2 D' F2 D' L2 B2",
+      "R2 L' B L U2 F R2 F R2 F2 U' R2 F2 U L2 D L2",
+      "U F' U2 R' F R F' U2 F' U2 F2 U R2 U R2 U R2 U2 R2",
+
+    ],
+    solution: "y L F' L' U' L U F U' L'",
+    image: oll39img,
+  },
+  {
+    step: 'oll',
+    id: 'OLL 40',
+    name: 'anti-fung',
+    setups: [
+      "U R2 F2 R' U B U' B' R U' F2 R2 D' F2 D F2 R2 U R2",
+      "R2 F2 R' U B U' B' R U' F2 R2 D' F2 D F2 R2 U R2",
+      "R L2 B' R' U2 F' L2 F' L2 F2 U L2 F2 U' R2 D' R2",
+      "U B U B U' B' R B' R' L2 U' B2 U B2 D' B2 D B2 L2",
+      "F' B2 L F U2 R B2 R' B2 R2 F2 L2 D L2 D F2 R2",
+      "F2 B L' B' U2 R' F2 R' F2 R2 U F2 R2 U' B2 D' B2",
+      "F2 U' R2 L B L2 B' L U B2 R2 D R2 B2 U' R2 U F2",
+      "F2 B L' B' U2 R' F2 R' F2 R2 U F2 R2 U' B2 D' B2",
+      "R2 L' B L U2 F R2 F' R2 F2 L2 B2 U R2 D B2 L2 D",
+      "R B' R F2 D B2 L' B L D L2 U2 F2 B2 D F2 U' F2 D",
+      "U B2 R2 B' U L U' L' B U' R2 B2 D' R2 D R2 B2 U B2",
+      "R U R B R' U' B' R D2 L2 D' L2 D' R2",
+      "F' B2 L F U2 R B2 R' B2 R2 F2 L2 D L2 D F2 R2",
+      "R2 L' B L U2 F R2 F' R2 F2 L2 B2 D B2 D L2 F2",
+      "U F2 L2 F' U R U' R' F U' L2 F2 D' L2 D L2 F2 U F2",
+      "B U B U' B' R B' R' L2 U' B2 U B2 D' B2 D B2 L2",
+      "R B' R F2 D B2 L' B L D L2 D2 F2 B2 U R2 U' R2",
+      "F' B2 L F U2 R B2 R' B2 R2 F2 L2 D L2 D F2 R2",
+      "F B2 R' F' U2 R' U2 R B2 R2 B2 U R2 U B2 R2 U' B2",
+      "U2 R U R U' R' F R' F' B2 U' R2 U R2 D' R2 D R2 B2",
+    ],
+    solution: "y R' F R U R' U' F' U R",
+    image: oll40img,
   },
   {
     step: 'oll',
