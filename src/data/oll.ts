@@ -19,7 +19,7 @@ import oll16img from '../assets/oll/oll16.svg';
 import oll17img from '../assets/oll/oll17.svg';
 import oll18img from '../assets/oll/oll18.svg';
 import oll19img from '../assets/oll/oll19.svg';
-
+import oll20img from '../assets/oll/oll20.svg';
 import oll21img from '../assets/oll/oll21.svg';
 import oll22img from '../assets/oll/oll22.svg';
 import oll23img from '../assets/oll/oll23.svg';
@@ -492,20 +492,20 @@ const olls: CFOPCase[] = [
     solution: "r' R U R U R' U' r R2' F R F'",
     image: oll19img,
   },
-  // {
-  //   step: 'oll',
-  //   id: 'OLL 20',
-  //   name: 'checkers',
-  //   setups: [
-  //     "R L' B2 U2 B R' L U2 R2 F2 L2 D' R2 B2 L2 F2",
-  //     "R L' F2 D2 B R' L U' B2 R2 B2 R2 U' R2 B2 R2 D2",
-  //     "R L' F2 D2 B R' L U' B2 R2 F2 L2 D L2 F2 R2 D2",
-  //     "R L' F2 D2 B R' L U' B2 R2 F2 L2 U2 D' R2 B2 L2",
-  //     "R L' F2 D2 B R' L U2 R2 F2 L2 D' L2 F2 R2 B2 D2",
-  //   ],
-  //   solution: "",
-  //   image: oll20img,
-  // },
+  {
+    step: 'oll',
+    id: 'OLL 20',
+    name: 'checkers',
+    setups: [
+      "R L' B2 U2 B R' L U2 R2 F2 L2 D' R2 B2 L2 F2",
+      "R L' F2 D2 B R' L U' B2 R2 B2 R2 U' R2 B2 R2 D2",
+      "R L' F2 D2 B R' L U' B2 R2 F2 L2 D L2 F2 R2 D2",
+      "R L' F2 D2 B R' L U' B2 R2 F2 L2 U2 D' R2 B2 L2",
+      "R L' F2 D2 B R' L U2 R2 F2 L2 D' L2 F2 R2 B2 D2",
+    ],
+    solution: "Rw' R U R U R' U' Rw2 R2' U R U' Rw'",
+    image: oll20img,
+  },
   {
     step: 'oll',
     id: 'OLL 21',
